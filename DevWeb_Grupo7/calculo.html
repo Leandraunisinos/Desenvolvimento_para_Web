@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Projeto utilizanto HTML, CSS e JavaScript -->
+<html lang="pt-br">
+    <head>
+        <!-- esse titulo é o que vai para a aba do navegador -->
+        <title>Projeto - Dev Web</title>
+        <!-- Carrega o arquivo de estilos style.css -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- o header define o cabeçalho do arquivo HTML -->
+                          <!-- Carrega o arquivo de estilos cabecalho.css -->
+                          <link rel="stylesheet" href="css/cabecalhoErodape.css">
+        <header>
+             <h1 class="titulo">REFORMA TRIBUTÁRIA</h1>
+             <ul class="navbar-links">           
+                <li> <a href="home.html">Home</a> </li>
+                <li> <a href="sobre.html">Sobre</a> </li>
+                <li> <a href="calendario.html">Calendário</a> </li>
+                <li class="active"> <a href="calculo.html">Cálculo</a></li>
+              </ul>
+
+        </header>
+
+       <!-- Conteudo de navegação-->
+       <main>
+                                  <!-- Carrega o arquivo de estilos contato.css -->
+                                  <link rel="stylesheet" href="css/contato.css">
+                                  <!-- Carrega o arquivo JS -->
+                                  <script src="js/calculadora.js" defer></script>
+        <h3 class ="indie-flower-regular">Simulação dos Tributos </h3>
+        
+        <!-- Campo para inserção do faturamento anual -->
+        <label for="faturamento">Insira o faturamento anual:</label>
+        <input type="number" id="faturamento" min="0" placeholder="Ex.: 500000">
+        
+        <!-- Seleção do ano -->
+        <label for="ano">Selecione o ano:</label>
+        <select id="ano">
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+            <option value="2033">2033</option>
+        </select>
+
+        <!-- Botão para calcular -->
+        <button onclick="calcularTributos()">Calcular</button>
+
+        <!-- Área para exibir o resultado -->
+        <p id="resultado"></p>
+
+
+        <div id="contato" class="caixa-contato" style="cursor: pointer;">
+            <div class="icone-bola"></div>
+            <div class="texto-contato">
+                <strong>Dúvidas sobre o cálculo</strong><br>
+                Contate nossos especialistas
+            </div>
+            <div class="seta">&rarr;</div>
+        </div>
+
+        </div>
+		
+	<p></p><img src="imagens/reforma-tributaria-calculadora-header.png" width="900px" alt ="Imagem contendo pilha de moeda de dinheiro, uma calculadora de mesa antiga e um ponto de interrogação " >
+        
+       </main>
+ <!-- rodapé-->
+ <footer>
+    <p>XPTO Soluções Fiscais S/A</p>
+    <p>Todos os direitos reservados - 2024</p>
+</footer>
+
+</body>
+</html>
+

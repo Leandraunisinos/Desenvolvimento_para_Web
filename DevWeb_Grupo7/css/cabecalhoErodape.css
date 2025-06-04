@@ -1,0 +1,58 @@
+  /* mesmo estando dentro do body, o header tem seu próprio estilo, mas ainda herda do estilo de body */
+  header {
+   background: linear-gradient(135deg, #000000, #8e44ad); /* estilo degrade */
+   padding: 10px 30px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: black;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   color: #fff;   
+}
+
+.titulo {
+   color: #F74103
+}
+ 
+ /* estiliza navegação e lista do cabeçalho */
+ .navbar-links li.active
+ {
+    color:#F74103;
+ }
+
+ /* mudar cor ao passar o mouse por cima */
+ .navbar-links li:hover
+ {
+    color: rgb(255, 238, 0);
+ }
+ 
+ /* Alinhas links do cabeçalho */
+ .navbar-links{
+    display: flex;
+    gap: 16px;
+ }
+ 
+  /* Redefine formatação dos elementos ancora e lista */
+  a {
+    text-decoration: none;
+    color: inherit;
+ }
+ 
+ /* tira o estilo de lista no menu */
+ li {
+ list-style-type: none;
+ }
+
+  /* estiliza o rodapé */
+footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background: linear-gradient(135deg, #000000, #8e44ad);
+   color: white;
+   text-align: center;
+   position: relative; /* Posição padrão para não interferir no fluxo */
+   width: 100%; /* Garante que preencha toda a largura */
+   height: 80px; /* Define a altura do rodapé */
+   
+}

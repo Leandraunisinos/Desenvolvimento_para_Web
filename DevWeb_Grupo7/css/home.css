@@ -1,0 +1,114 @@
+
+/* define o estilo para todo o html que estiver dentro da tag body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Cor de fundo clara e agradável */
+    color: #333; /* Cor do texto mais suave */
+    z-index: 1000;
+    height: 1000px;
+    min-height: 100vh; /* Ocupa pelo menos 100% da altura da tela */
+    padding-top: 82px; /* Corresponde à altura do cabeçalho */
+ }
+ 
+   /* mesmo estando dentro do body, o main tem seu próprio estilo, mas ainda herda do estilo de body */
+ .texto-empresa {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    justify-content: last baseline;
+    align-items: center;
+    padding: 100px 100px 20px; /* top; left/right; bottom */ 
+    text-align: center; 
+    overflow: auto; /* Permite scroll interno, se necessário */
+ }
+ 
+ /* Ajusta Imagens */
+ img {
+    margin: auto;
+    display: block;
+  }
+  
+ /* organizar o carrossel */
+ section.slider {
+   margin: 0 auto; /* centralizar */
+   width: 90%; /* largura das imagens na tela */
+   height: auto;
+   padding: 0 !important;
+   overflow: hidden; /* esconder as barra de rolagem horizontal */
+} 
+
+.slider-content {
+   width: 400%; /* caber todas as imagens dentro */
+   height: auto;
+   display: flex; /* para que as divs fiquem uma ao lado da outra */
+}
+
+/* esconder os inputs */
+.slider-content input {
+   display: none;
+}
+
+/* classe que está guardando as imagens */
+.slide-box {
+   width: 25%;
+   height: auto;
+   position: inherit;
+   text-align: center;
+   transition: 1s; /* velocidade que passa suavemente de uma imagem para a outra automaticamente */ 
+}
+
+/* organizar tamanho da imagem do carrossel */
+.slide-box img {
+   width: 70%;
+   height: 90%;
+   padding-bottom: 30px;
+}
+
+/* organizar as "bolinhas" da navegação */
+.nav-manual, .nav-auto {
+   position: absolute;
+   width: 90%;
+   margin-top: 41%;
+   display: flex;
+   justify-content: center;
+}
+
+/* estilizar as "bolinhas" de rolagem do carrossel */
+.nav-manual .manual-btn, .nav-auto div {
+   border: 1px solid #F74103;
+   padding: 10px;
+   border-radius: 50%; /* deixar redonda */ 
+   cursor: pointer; /* mudar o cursos ao passar em cima */
+   transition: 0.2s; /* transição suave na troca das bolinhas */
+}
+/* todos terão os estilos, MENOS O ÚLTIMO */
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+   margin-right: 10px;
+   
+}
+
+.nav-manual .manual-btn:hover {
+   background-color: black; /* trocar cor de fundo do botão selecionado */
+}
+
+/* quando o botão 'X' estiver marcado, trocar background color */
+#radio01:checked ~.nav-auto .auto-btn1, #radio02:checked ~.nav-auto .auto-btn2, #radio03:checked ~.nav-auto .auto-btn3 {
+   background-color: #F74103;
+}
+
+/* começar mostrando a imagem 1 */
+#radio01:checked ~ .primeiro {
+   margin-left: 0%;
+}
+
+/* mostrar a imagem 2 */
+#radio02:checked ~ .primeiro {
+   margin-left: -25%;
+}
+
+/* mostrar a imagem 3 */
+#radio03:checked ~ .primeiro {
+   margin-left: -50%;
+}

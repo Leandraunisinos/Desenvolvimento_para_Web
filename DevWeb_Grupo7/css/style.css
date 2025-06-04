@@ -1,0 +1,88 @@
+
+/* define o estilo para todo o html que estiver dentro da tag body */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #080808;
+    padding-top: 82px; /* Corresponde à altura do cabeçalho */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+ }
+
+
+
+  /* mesmo estando dentro do body, o main tem seu próprio estilo, mas ainda herda do estilo de body */
+ main {
+    justify-content:last baseline;
+    align-items: center;
+    padding: 16px;
+    padding-top: 62px; /* Ajuste para evitar a sobreposição */
+    overflow: auto; /* Permite scroll interno, se necessário */
+    min-height: 80vh
+ }
+ 
+ /* estiliza todos os titulos que usam a tag h2 */
+ h2 {
+    color: #005a87;
+    margin-top: 5px;
+ }
+  
+
+ 
+ /* Ajusta Imagens */
+ img {
+    margin: auto;
+    display: block;
+  }
+ 
+  /* estiliza todos os botoes que tem na página */
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #005a87;
+    color: white;
+    cursor: pointer;
+ }
+ 
+
+ /* Estilos para a tabela específica da página "calendário" */
+#tabela-calendario {
+   border-collapse: collapse;
+   width: 30%;
+   margin: auto;
+   margin-top: 20px;
+   text-align: center;
+}
+
+#tabela-calendario th, #tabela-calendario td {
+   padding: 10px;
+   border: 1px solid #ddd;
+   transition: background-color 0.3s ease;
+}
+
+#tabela-calendario th {
+   background-color: #005a87; /* Cor de fundo para o cabeçalho */
+   color: white; /* Cor do texto no cabeçalho */
+}
+
+#tabela-calendario tbody td:hover {
+   background-color: #f0f0f0;
+}
+
+#tabela-calendario tr:hover td {
+   background-color: #e6f7ff;
+   
+}
+
+#tabela-calendario td:hover {
+   box-shadow: 2px 2px 8px rgba(192, 9, 161, 0.1);
+}
+
+
+

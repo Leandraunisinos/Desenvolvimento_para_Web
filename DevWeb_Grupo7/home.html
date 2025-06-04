@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Projeto utilizanto HTML, CSS e JavaScript -->
+<html lang="pt-br">
+    <head>
+        <!-- esse titulo é o que vai para a aba do navegador -->
+        <title>Projeto - Dev Web</title>
+        <!-- Carrega o arquivo de estilos style.css -->
+
+
+    </head>
+    <body>
+        
+        <!-- Carrega o arquivo de estilos style.css -->
+        <link rel="stylesheet" href="css/cabecalhoErodape.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        
+        
+        <!-- o header define o cabeçalho do arquivo HTML -->
+        <header>
+             <h1 class="titulo">REFORMA TRIBUTÁRIA</h1>
+             <ul class="navbar-links">           
+                <li class="active"> <a href="home.html">Home</a> </li>
+                <li> <a href="sobre.html">Sobre</a> </li>
+                <li> <a href="calendario.html">Calendário</a> </li>
+                <li> <a href="calculo.html">Cálculo</a></li>
+              </ul>
+
+        </header>
+
+        <div>
+            <p class="texto-empresa">Em virtude das alterações de legislação e questionamentos de nossos clientes, a empresa XPTO Soluções Fiscais essa página para compartilhar as informações, projeções no calendário e simulações de cálculo pós período de transição, para que nossos clientes possam antecipar os impactos no fluxo de caixa. .</p>
+               <!-- <p></p><img src="imagens/inicial.png" width="440px" alt ="Imagem contendo um homem lendo um extrato, ao lado de uma calculadora e cedulas de dinheiro " > -->
+           </div>
+
+        <!-- Carrossel com 3 fotos -->
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio01">
+                <input type="radio" name="btn-radio" id="radio02">
+                <input type="radio" name="btn-radio" id="radio03">
+
+
+                <!-- classe que guarda as imagens do carrossel -->
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="imagens/inicial.png" alt="Slide 1 - Imagem contendo um homem lendo um extrato, ao lado de uma calculadora e cedulas de dinheiro">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="imagens/foto slide 2.jpg" alt="Slide 2">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="imagens/foto-slide-3.jpg" alt="Slide 3">
+                </div>
+
+                <!-- botões automáticos -->
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <!-- botões manuais -->
+                <div class="nav-manual">
+                    <!-- Label faz referencia aos inputs (tipo Radio) -->
+                    <label for="radio01" class="manual-btn"></label>
+                    <label for="radio02" class="manual-btn"></label>
+                    <label for="radio03" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+       
+        <!-- rodapé-->
+        <footer>
+            <p>XPTO Soluções Fiscais S/A</p>
+            <p>Todos os direitos reservados - 2024</p>
+        </footer>
+
+        <script src="js/home.js"></script>
+    </body>
+</html>

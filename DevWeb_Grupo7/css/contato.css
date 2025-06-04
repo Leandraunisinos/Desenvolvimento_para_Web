@@ -1,0 +1,45 @@
+/*Estilo para o 'entre em contato' */
+.caixa-contato {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5; /* Cor de fundo */
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px; /* Espaço superior */
+    max-width: 300px; /* Definindo largura máxima */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+ }
+ 
+ .icone-bola {
+    width: 24px;
+    height: 24px;
+    background-color: #0073b1; /* Cor azul da bola */
+    border-radius: 50%;
+    margin-right: 12px;
+ }
+ 
+ .texto-contato {
+    font-size: 14px;
+    color: #000; /* Cor do texto */
+ }
+ 
+ .texto-contato strong {
+    font-size: 16px;
+    color: #000; /* Cor do texto em negrito */
+ }
+ 
+ .seta {
+    margin-left: auto;
+    font-size: 16px;
+    color: #808080; /* Cor da seta */
+ }
+ 
+
+  /* Importando fonte*/
+  .indie-flower-regular {
+   font-family: "Indie Flower", cursive;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
